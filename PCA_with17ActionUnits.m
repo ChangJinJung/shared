@@ -20,7 +20,7 @@ for k=1:size(emoout_MDD_taskAll,1)
     AU_MDD=zeros(size(emoout_MDD_taskAll,3),17); 
     
     for p=1:17
-        AU(:,p)=emoout_MDD_taskAll(k,p,:); %% use 17 action units for PCA
+        AU_MDD(:,p)=emoout_MDD_taskAll(k,p,:); %% use 17 action units for PCA
     end
     
     MergedUnits_MDD=[MergedUnits_MDD; log(1+AU_MDD)]; %% Apply loganism 
